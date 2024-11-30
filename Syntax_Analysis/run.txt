@@ -1,0 +1,5 @@
+cd Syntax_Analysis
+bison -d sa2.y
+ flex sa.l
+ gcc -o parser lex.yy.c sa2.tab.c
+ ./parser input.txt

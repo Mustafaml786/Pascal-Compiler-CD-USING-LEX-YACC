@@ -1,0 +1,6 @@
+cd Semantic_Analysis
+cd AST
+bison -d ast2.y
+flex ast1.l
+gcc -o parser lex.yy.c ast2.tab.c
+./parser input.txt

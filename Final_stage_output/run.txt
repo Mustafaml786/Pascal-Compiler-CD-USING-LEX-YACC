@@ -1,0 +1,5 @@
+cd Final_stage_output
+ bison -d t1.y
+ flex t1.l
+ gcc -o output_file lex.yy.c t1.tab.c 
+./output_file n2.pas  

@@ -1,0 +1,4 @@
+cd Lexical_Analysis
+flex lexical.l
+ gcc -o lexical lex.yy.c  
+ ./lexical input.txt 

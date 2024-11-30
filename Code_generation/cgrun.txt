@@ -1,0 +1,5 @@
+cd code_generation
+bison -d cg2.y
+flex cg1.l
+gcc -o parser lex.yy.c cg2.tab.c
+./parser input.txt

@@ -1,0 +1,14 @@
+program Example9;
+var
+  i: Integer;
+   
+begin
+  i := 10;
+  while i > 10 do
+  begin
+    i := 10 + i;
+    i := i*1;
+    write(i);
+  end;
+
+end.
